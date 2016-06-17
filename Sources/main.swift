@@ -40,8 +40,8 @@ struct VideoLink {
 
 videoImages.flatMap(VideoLink.init).forEach {
 	let channels = [6, 7]
-	let channelMapString = channels
+	let mappedChannels = channels
 		.map { "-map 0:\($0)" }
 		.joined(separator: " ")
-	print("ffmpeg -i \($0.url) \(channelMapString) -c copy \"\($0.number) \($0.title).ts\"")
+	print("ffmpeg -i \($0.url) \(mappedChannels) -c copy \"\($0.number) \($0.title).ts\"")
 }
