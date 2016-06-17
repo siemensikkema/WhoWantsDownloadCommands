@@ -10,6 +10,7 @@
 		5F3AC4501D143864005961CA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AC44F1D143864005961CA /* main.swift */; };
 		5F3AC4551D143982005961CA /* Kanna.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F3AC4541D143982005961CA /* Kanna.framework.dSYM */; };
 		5F3AC45A1D143A8C005961CA /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3AC4591D143A8C005961CA /* Kanna.framework */; };
+		5F3AC45E1D143B58005961CA /* Kanna.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F3AC4591D143A8C005961CA /* Kanna.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,6 +23,16 @@
 				5F3AC4551D143982005961CA /* Kanna.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5F3AC45D1D143B52005961CA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5F3AC45E1D143B58005961CA /* Kanna.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -88,6 +99,7 @@
 				5F3AC4401D143827005961CA /* Sources */,
 				5F3AC4411D143827005961CA /* Frameworks */,
 				5F3AC4421D143827005961CA /* CopyFiles */,
+				5F3AC45D1D143B52005961CA /* CopyFiles */,
 			);
 			buildRules = (
 			);
