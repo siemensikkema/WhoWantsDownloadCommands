@@ -19,5 +19,5 @@ Video channel|Audio channel|Video resolution*|Audio resolution (KHz)|Audio bitra
 * [Carthage](https://github.com/Carthage/Carthage/)
 
 # Usage
-* run carthage bootstrap -platform OSX
+* run `carthage bootstrap --platform OSX`
 * build and run
