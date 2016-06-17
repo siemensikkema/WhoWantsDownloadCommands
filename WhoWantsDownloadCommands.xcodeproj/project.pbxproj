@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5F3AC4501D143864005961CA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3AC44F1D143864005961CA /* main.swift */; };
+		5F3AC4551D143982005961CA /* Kanna.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F3AC4541D143982005961CA /* Kanna.framework.dSYM */; };
+		5F3AC45A1D143A8C005961CA /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3AC4591D143A8C005961CA /* Kanna.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5F3AC4421D143827005961CA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				5F3AC4551D143982005961CA /* Kanna.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -25,6 +28,8 @@
 /* Begin PBXFileReference section */
 		5F3AC4441D143827005961CA /* WhoWantsDownloadCommands */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WhoWantsDownloadCommands; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F3AC44F1D143864005961CA /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		5F3AC4541D143982005961CA /* Kanna.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Kanna.framework.dSYM; path = ../WWDC16/Carthage/Build/Mac/Kanna.framework.dSYM; sourceTree = "<group>"; };
+		5F3AC4591D143A8C005961CA /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna.framework; path = Carthage/Build/Mac/Kanna.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F3AC45A1D143A8C005961CA /* Kanna.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +47,7 @@
 		5F3AC43B1D143827005961CA = {
 			isa = PBXGroup;
 			children = (
+				5F3AC4511D1438DE005961CA /* Frameworks */,
 				5F3AC4451D143827005961CA /* Products */,
 				5F3AC44E1D143864005961CA /* Sources */,
 			);
@@ -60,6 +67,15 @@
 				5F3AC44F1D143864005961CA /* main.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		5F3AC4511D1438DE005961CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F3AC4591D143A8C005961CA /* Kanna.framework */,
+				5F3AC4541D143982005961CA /* Kanna.framework.dSYM */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +232,11 @@
 		5F3AC44C1D143827005961CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +244,11 @@
 		5F3AC44D1D143827005961CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
